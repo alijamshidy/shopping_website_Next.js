@@ -15,7 +15,7 @@ const page = () => {
         {categories.map(category => (
           <Link
             key={category.slug}
-            href={`/products`}
+            href={`/products/${category.slug}`}
             className="group bg-white rounded-xl overflow-hidden shadow-md hover:shadow-lg hover:translate-y-[-5px] border-b-4 relative transition-all"
             style={{ borderColor: category.color }}>
             <div className="h-48 relative overflow-hidden bg-gray-100 ">
